@@ -1,0 +1,215 @@
+:root {
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --accent-color: #2196F3;
+}
+
+* {
+    list-style: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+/* ========= Шапка ==================================== */
+
+.logo {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+
+    color: var(--accent-color);
+}
+/* .logo  */
+.studio-header {
+    color: #000000;
+}
+
+/* Навигация */
+.header {
+    background-color: #FFFFFF;
+}
+
+.header .link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+.link.current-page {
+    color: var(--accent-color);
+}
+
+.header .link:hover,
+.header .link:focus {
+    color: var(--accent-color);
+}
+
+/* ========= Герой ==================================== */
+
+.hero {
+    background-color: #2F303A;
+}
+ .hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+ }
+
+ .main-btn {
+    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+        
+    letter-spacing: 0.06em;
+
+    color: #FFFFFF;
+    background-color: var(--accent-color);
+ }    
+    
+.main-btn:hover,
+.main-btn:focus {
+    background-color: #188CE8;
+ }
+
+/* ========= Особенности ============================== */
+
+.features .title {
+    display: none;
+}
+
+.list-title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+
+    text-transform: uppercase;
+}
+
+.description {
+    font-size: 14px;
+    line-height: 1.71;
+
+    color: #757575;
+}
+
+/* ========= Чем мы занимаемся ======================== */
+
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+
+    text-align: center;
+}
+
+/* ========= Наша команда ============================= */
+.team {
+    background-color: #F5F4FA;
+}
+.card {
+    background-color: #FFFFFF;
+}
+.team-list-title {
+    font-weight: 500;
+}
+
+.team-list-item {
+    font-size: 16px;
+    line-height: 1.19;
+
+    text-align: center;
+}
+
+/* ========= Подвал =================================== */
+
+.footer {
+    background-color: #2F303A;
+}
+
+.studio-footer {
+    color: #FFFFFF;
+}
+
+.address-footer {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+}
+.address {
+    color: #FFFFFF;
+}
+.footer .link {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    }
+    
+.footer .link:hover,
+.footer .link:focus {
+    color: #FFFFFF;
+}
+
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++ Сторінка портфоліо ++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.portfolio .title {
+    display: none;
+}
+
+.btn.filtr {
+    font-weight: 500;
+    line-height: 1.63;
+    letter-spacing: 0.03em;
+}
+
+.btn {
+    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+        
+    letter-spacing: 0.06em;
+
+    color: var(--primary-text-color);
+    background-color: #F5F4FA;
+ }    
+    
+.btn:hover,
+.btn:focus {
+    color: #FFFFFF;
+    background-color: var(--accent-color);
+ }
+
+.portfolio-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+
+    letter-spacing: 0.06em;
+}
+
+.portfolio-description {
+    font-size: 16px;
+    line-height: 1.88;
+
+    color: var(--secondary-text-color);
+}
