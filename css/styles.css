@@ -60,7 +60,7 @@ body {
 .hero {
     background-color: #2F303A;
 }
- .hero-title {
+.hero-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -69,9 +69,10 @@ body {
     text-transform: uppercase;
     
     color: #FFFFFF;
- }
+}
 
- .main-btn {
+.main-btn {
+    cursor: pointer;
     
     font-weight: 700;
     font-size: 16px;
@@ -81,12 +82,12 @@ body {
 
     color: #FFFFFF;
     background-color: var(--accent-color);
- }    
+}    
     
 .main-btn:hover,
 .main-btn:focus {
     background-color: #188CE8;
- }
+}
 
 /* ========= Особенности ============================== */
 
@@ -175,29 +176,22 @@ body {
     display: none;
 }
 
-.btn.filtr {
-    font-weight: 500;
-    line-height: 1.63;
-    letter-spacing: 0.03em;
-}
-
 .btn {
-    
-    font-weight: 700;
+    cursor: pointer;
+    font-weight: 500;
     font-size: 16px;
-    line-height: 1.88;
-        
-    letter-spacing: 0.06em;
+    line-height: 1.63;
+    letter-spacing: inherit;
 
     color: var(--primary-text-color);
     background-color: #F5F4FA;
- }    
+}    
     
 .btn:hover,
 .btn:focus {
     color: #FFFFFF;
     background-color: var(--accent-color);
- }
+}
 
 .portfolio-title {
     font-weight: 700;
