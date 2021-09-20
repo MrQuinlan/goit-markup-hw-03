@@ -14,9 +14,42 @@ body {
     color: var(--primary-text-color);
 }
 
+.title,
+.list,
+.description {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* outline: 2px solid red; */
+}
+
+.centered-items {
+    align-items: center;
+}
+
 /* ========= Шапка ==================================== */
 
+.header {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header-flex {
+    display: flex;
+    padding: 24px 0;
+    margin: 0;
+}
+
 .logo {
+    min-height: 80px;
+
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -25,14 +58,38 @@ body {
 
     color: var(--accent-color);
 }
-/* .logo  */
+
+/* -----logo-----  */
+
 .studio-header {
     color: #000000;
 }
 
-/* Навигация */
-.header {
-    background-color: #FFFFFF;
+/* -----Навигация----- */
+
+.header-nav {
+    display: flex;
+    margin: 0;
+}
+
+.nav-list {
+    display: flex;
+    margin-left: 93px;
+}
+
+.nav-item:not(:first-child) {
+    margin-left: 50px;
+}
+
+/* -----Контактьі----- */
+
+.contacts-list {
+    display: flex;
+    margin-left: 331px;
+}
+
+.contacts-item:not(:first-child) {
+    margin-left: 50px;
 }
 
 .header .link {
@@ -58,6 +115,7 @@ body {
 /* ========= Герой ==================================== */
 
 .hero {
+    text-align: center;
     background-color: #2F303A;
 }
 .hero-title {
@@ -91,10 +149,6 @@ body {
 
 /* ========= Особенности ============================== */
 
-.features .title {
-    display: none;
-}
-
 .list-title {
     font-size: 14px;
     font-weight: 700;
@@ -112,7 +166,7 @@ body {
 
 /* ========= Чем мы занимаемся ======================== */
 
-.title {
+.occupations > .title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -141,6 +195,7 @@ body {
 /* ========= Подвал =================================== */
 
 .footer {
+    padding: 60px 0;
     background-color: #2F303A;
 }
 
