@@ -199,6 +199,10 @@ body {
     background-color: #2F303A;
 }
 
+.footer .description {
+    margin-bottom: 20px;
+}
+
 .studio-footer {
     color: #FFFFFF;
 }
@@ -208,6 +212,7 @@ body {
     font-size: 14px;
     line-height: 1.71;
 }
+
 .address {
     color: #FFFFFF;
 }
