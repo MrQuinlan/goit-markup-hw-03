@@ -21,6 +21,12 @@ body {
     margin: 0;
 }
 
+.section {
+    padding: 94px 0;
+}
+
+
+
 .container {
     width: 1200px;
     padding: 0 15px;
@@ -116,7 +122,11 @@ body {
     text-align: center;
     background-color: #2F303A;
 }
+.hero .container {
+    padding: 200px 0;
+}
 .hero-title {
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -138,6 +148,8 @@ body {
 
     color: #FFFFFF;
     background-color: var(--accent-color);
+
+    border-radius: 4px;
 }    
     
 .main-btn:hover,
@@ -146,6 +158,23 @@ body {
 }
 
 /* ========= Особенности ============================== */
+
+.features {
+    margin-top: 94px;
+    padding: 0;
+}
+.feature-list {
+    display: flex;
+    flex-basis: calc((100% - 30px) / 4);
+}
+
+.feature-list .item:not(:first-child){
+    margin-left: 30px;
+}
+
+.features .list-title {
+    margin-bottom: 10px;
+}
 
 .list-title {
     font-size: 14px;
@@ -164,7 +193,8 @@ body {
 
 /* ========= Чем мы занимаемся ======================== */
 
-.occupations > .title {
+.occupations .title {
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -172,14 +202,43 @@ body {
     text-align: center;
 }
 
+.occupations-list {
+    display: flex;
+}
+
+.occupations-list .item:not(:first-child){
+    margin-left: 30px;
+}
+
 /* ========= Наша команда ============================= */
 .team {
+    text-align: center;
     background-color: #F5F4FA;
 }
+
+.team-title {
+    margin-bottom: 50px;
+}
+.team-list {
+    display: flex;
+}
+
+.team-list .item:not(:first-child){
+    margin-left: 30px;
+}
+
 .card {
+    padding-bottom: 30px;
+    width: 270px;
     background-color: #FFFFFF;
 }
+
+.teammate-photo {
+    margin-bottom: 30px;
+}
+
 .team-list-title {
+    margin-bottom: 10px;
     font-weight: 500;
 }
 
