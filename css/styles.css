@@ -40,6 +40,12 @@ body {
     align-items: center;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 /* ========= Шапка ==================================== */
 
 .header {
@@ -51,6 +57,10 @@ body {
     display: flex;
     padding: 24px 0;
     margin: 0;
+}
+
+.header-flex .link {
+    padding: 15px 0;
 }
 
 .logo {
@@ -289,38 +299,91 @@ body {
 +++++++++++++++++++++++++ Сторінка портфоліо ++++++++++++++++++++++++++++++++++++++++++++++++
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-.portfolio .title {
-    display: none;
+/*----- Фильтрьі -----*/
+
+.portfolio {
+    padding: 94px 0;
 }
 
-.btn {
+.filters {
+    display: flex;
+    padding: 0;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.filters-list-btn {
+    display: flex;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.filters-item-btn {
+    padding: 6px 22px;
     cursor: pointer;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
     letter-spacing: inherit;
-
+    
     color: var(--primary-text-color);
     background-color: #F5F4FA;
-}    
+    border: 0;
+    border-radius: 4px;
+}
+
+.filters-item:not(:first-child) {
+    margin-left: 8px;
+}
     
-.btn:hover,
-.btn:focus {
+.filters-item-btn:hover,
+.filters-item-btn:focus {
     color: #FFFFFF;
     background-color: var(--accent-color);
 }
 
-.portfolio-title {
+/*----- Примерьі работ -----*/
+
+.examples-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.examples-item {
+    margin: 0 30px 30px 0;
+    background-color: #FFFFFF;
+}
+
+.examples-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.examples-item:nth-child(n + 7) {
+    margin-bottom: 0;
+}
+
+.examples-description-group {
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+    border-top: 0;
+}
+
+.examples-title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
 
     letter-spacing: 0.06em;
+    margin: 0 0 4px 0;
 }
 
-.portfolio-description {
+.examples-description {
     font-size: 16px;
     line-height: 1.88;
 
     color: var(--secondary-text-color);
+    margin: 0;
 }
