@@ -116,6 +116,10 @@ img {
     text-decoration: none;
 }
 
+.header .contacts-item>.link {
+    color: var(--secondary-text-color);
+}
+
 .link.current-page {
     color: var(--accent-color);
 }
@@ -243,6 +247,8 @@ img {
     padding-bottom: 30px;
     width: 270px;
     background-color: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
+
 }
 
 .teammate-photo {
